@@ -1,0 +1,132 @@
+/* Chat Widget Styles - Uses theme variables from custom.css */
+
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chat-button {
+  background: linear-gradient(135deg, #0f4c75 0%, #00d4ff 100%);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(15, 76, 117, 0.3);
+  transition: all 0.3s ease;
+}
+
+.chat-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 212, 255, 0.4);
+}
+
+.chat-box {
+  width: 380px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(15, 76, 117, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #0f4c75 0%, #00d4ff 100%);
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f8fafc;
+}
+
+.chat-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-body::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background: #00d4ff;
+  border-radius: 10px;
+}
+
+.bubble {
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 10px;
+  max-width: 80%;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.user {
+  background: linear-gradient(135deg, #0f4c75 0%, #1b6fa0 100%);
+  color: white;
+  margin-left: auto;
+  align-self: flex-end;
+  box-shadow: 0 2px 8px rgba(15, 76, 117, 0.15);
+}
+
+.bot {
+  background: #e5e7eb;
+  color: #1a2332;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+  gap: 8px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  color: #1a2332;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.chat-input input:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.1);
+}
+
+.chat-input button {
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #0f4c75 0%, #00d4ff 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.chat-input button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(15, 76, 117, 0.2);
+}
